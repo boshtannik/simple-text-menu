@@ -1,4 +1,3 @@
-import os
 QUIT_SYMBOLS = ["q", "Q", "quit", "exit"]
 
 
@@ -10,10 +9,10 @@ def menu(menu_dict: dict):
             print(f"{i + 1}. {item}")
 
         choice = input(f"Enter your choice, or {QUIT_SYMBOLS[0]} to quit: ")
-        os.system('cls' if os.name == 'nt' else 'clear')
 
         mapped_choices = {str(i + 1): key for i, key in enumerate(menu_dict)}
 
+        print(chr(27) + "[2J")
         if choice not in mapped_choices:
             print("Invalid choice")
             continue
