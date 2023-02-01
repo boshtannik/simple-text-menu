@@ -1,3 +1,6 @@
+from engine import QUIT_SYMBOLS
+
+
 # global settings variables to be changed in the menu
 display_on: bool = True
 brightness: float = 0.5  # must be limited form 0 to 1
