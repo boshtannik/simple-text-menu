@@ -11,6 +11,7 @@ sent trough text sending protocols, like TCP, and then just wait for user input
 to process further actions.
 
 The idea lays in the tree-like structure of menus hierarchy. Like:
+```
 Menu
   |
   +---Sound
@@ -26,3 +27,4 @@ Menu
   |     +--- Brightness  (Callable handler that handles user input)
   |
   +---Etc...
+```
